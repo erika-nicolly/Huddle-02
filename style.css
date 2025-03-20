@@ -41,6 +41,7 @@ nav img {
 
 .btn {
     padding: 15px 60px;
+    font-size: 18px;
     background-color: #ffffff;
     border: 0;
     border-radius: 25px;
@@ -101,17 +102,22 @@ nav img {
 
 .service img {
     max-width: 100%;
-    width: 520px;
+    width: 55%;
+    height: 440px;
     padding: 15px 80px 15px 60px;
 }
 
 .content h2 {
-    margin: 10px 0px;
+    margin: 10px 0px 20px;
+    font-size: 30px;
 }
 
 .content p {
     width: 93%;
     color: hsl(208, 11%, 55%);
+    font-size: 20px;
+    padding-right: 20px;
+    line-height: 150%;
 }
 
 .left {

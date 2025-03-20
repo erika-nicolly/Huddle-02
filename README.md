@@ -1,15 +1,24 @@
-# Huddle-Frontend Mentor
+<p align="center">
+  <img alt="" src="./.github/preview.png" width="100%">
+</p>
 
-Versão Desktop:
-
-![Captura de Tela do Projeto](./.github/preview.desktop.png)
-
-Versão Mobile:
-
-![Captura de Tela do Projeto](./.github/preview.mobile.png)
+<br>
 
 ## 🚀 Tecnologias
 
-Este projeto foi desenvolvido com as seguintes tecnologias:
-- HTML
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML 
 - CSS
+- Frontend Mentor
+
+<br>
+
+## 💻 Projeto
+Projeto exclusivo e gratuito, disponível pelo Frontend Mentor para ensino de tecnologias WEB.
+<br>
+
+## 🌐 Acesse o projeto
+👉 [Huddle](https://erika-nicolly.github.io/Huddle-02/)
+
+<br>
