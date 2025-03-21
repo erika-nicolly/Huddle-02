@@ -5,8 +5,8 @@
 }
 
 body {
-    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 h1, button {
@@ -24,9 +24,9 @@ ul {
 }
 
 header {
-    background: url(./assets/bg-hero-desktop.svg);
+    background: url(./assets/bg-hero-mobile.svg) no-repeat center/cover;
     background-color: hsl(193, 100%, 96%);
-    padding: 40px 60px;
+    padding: 30px 20px;
 }
 
 nav {
@@ -36,12 +36,13 @@ nav {
 }
 
 nav img {
-    height: 35px;
+    width: 120px;
+    height: 18px;
 }
 
 .btn {
-    padding: 15px 60px;
-    font-size: 18px;
+    padding: 6px 24px;
+    font-size: 12px;
     background-color: #ffffff;
     border: 0;
     border-radius: 25px;
@@ -50,36 +51,33 @@ nav img {
 }
 
 .build-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0px 20px;
-}
-
-.build {
-    width: 45%;
-}
-
-.illus {
-    width: 55%;
+    flex-direction: column;
+    text-align: center;
 }
 
 .build h1 {
-    font-size: 42px;
-    padding-right: 40px;
-    margin: 25px 0px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 60px 10px 20px;
 }
 
 .build p {
-    padding-right: 40px;
-    margin: 25px 0px;
     color: hsl(208, 11%, 55%);
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 24px 30px;
 }
 
 .build button {
     background-color: hsl(322, 100%, 66%);
     color: #ffffff;
-    padding: 15px 70px;
+    padding: 14px 60px;
+    margin-bottom: 30px;
+}
+
+.illus {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .services {
@@ -87,75 +85,79 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 80px 40px;
+    padding: 60px 40px 60px;
 }
 
 .service {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10px 50px 65px;
+    flex-direction: column;
+}
+
+.service {
+    padding: 40px 30px 40px;
     box-shadow: 0 3px 16px rgba(0,0,0,0.12);
     margin-bottom: 40px;
     border-radius: 10px;
 }
 
 .service img {
-    max-width: 100%;
-    width: 55%;
-    height: 440px;
-    padding: 15px 80px 15px 60px;
+    max-width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
-.content h2 {
-    margin: 10px 0px 20px;
-    font-size: 30px;
+.service h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.content p {
-    width: 93%;
-    color: hsl(208, 11%, 55%);
-    font-size: 20px;
-    padding-right: 20px;
-    line-height: 150%;
-}
-
-.left {
-    padding: 0;
-}
-
-.left p {
+.service p {
+    font-size: 14px;
+    text-align: center;
     width: 100%;
+    color: hsl(208, 11%, 55%);
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.service-1,
+.service-3 {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .promo {
     position: relative;
     max-width: 100%;
-    width: 55%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     background-color: #ffffff;
-    padding: 60px 0px;
+    padding: 40px 20px;
     box-shadow: 0 3px 16px rgba(0,0,0,0.12);
     border-radius: 10px;
-    margin-bottom: -10%;
+    margin-bottom: -20%;
 }
 
 .promo h1 {
     margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .btn2 {
-    margin-top: 20px;
-    padding: 24px 110px;
-    border-radius: 40px;
+    margin-top: 12px;
+    padding: 12px 20px;
+    border-radius: 50px;
     background-color: hsl(322, 100%, 66%);
     color: #ffffff;
     border: 0;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -164,21 +166,19 @@ footer {
     flex-direction: column;
     background-color: hsl(192, 100%, 9%);
     color: #ffffff;
-    padding: 200px 100px 30px;
+    padding: 150px 30px 30px;
 }
 
 .footer-logo {
-    width: 250px;
+    width: 160px;
 }
 
 .footer-sec {
-    display: flex;
-    margin: 40px 0px;
+    margin: 30px 0px;
 }
 
 .sec-1 {
-    min-width: 40%;
-    width: 40%;
+    width: 100%;
 }
 
 .add {
@@ -186,26 +186,26 @@ footer {
     align-items: flex-start;
 }
 
+.add p {
+    font-size: 16px;
+}
+
 .add img {
     margin-top: 4px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 li {
    margin-bottom: 20px; 
-   padding-right: 60px;
    opacity: 0.9;
-}
-
-.sec-2,
-.sec-3,
-.sec-4 {
-    width: 20%;
-    margin-left: 30px;
+   font-size: 16px;
 }
 
 .social {
+    margin-top: 40px;
     display: flex;
+    justify-content: center;
     padding: 0;
     cursor: pointer;
 }
@@ -216,47 +216,29 @@ a {
     color: #ffffff;
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     padding: 5px;
 }
 
 .social li {
-    padding: 0px 7px;
+    padding: 1px 6px;
 }
 
 .copy {
-    text-align: right;
+    text-align: center;
+    font-size: 14px;
 }
 
-@media (max-width: 992px) {
-    header {
-        padding: 30px 20px;
+@media (min-width: 768px) {
+    nav img {
+        width: 140px;
+        height: 20px;
     }
 
-    nav img{
-        max-width: 170px;
-        max-height: 30px;
-    }
-
-    .btn {
-        padding: 12px 50px;
-    }
-
-    .build-sec {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .build {
-        width: 95%;
-    }
-
-    .illus {
-        margin-top: 30px;
-        width: 80%;
+    nav .btn {
+        padding: 10px 30px;
     }
 
     .build h1 {
@@ -264,171 +246,251 @@ a {
     }
 
     .build p {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: 18px;
     }
 
-    .services {
-        padding: 60px 80px;
-        text-align: center;
+   .illus {
+       max-width: 80%;
+       margin: 0 auto;
+   }
+
+   .services {
+        padding: 60px 160px;
+   }
+
+   .service img {
+        width: 70%;
+        height: 220px;
+   }
+
+   footer {
+        padding: 180px 60px 20px;
+   }
+
+   .promo {
+        margin-bottom: -10%;
+   }
+
+}
+
+@media (min-width: 1024px) {
+    nav img {
+        width: 200px;
+        height: 30px;
     }
 
-    .service {
-        flex-direction: column;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-left: 0px;
+    nav .btn {
+        padding: 14px 60px;
     }
 
-    .service-1,
-    .service-3 {
-        flex-direction: column-reverse;
+    .build h1 {
+        margin-top: 80px;
+        font-size: 38px;
+    }
+
+    .build p {
+        margin: 0 40px 40px;
+        font-size: 23px;
+    }
+
+    .build .btn {
+        padding: 20px 100px;
+    }
+
+    .illus {
+        max-width: 75%;
+    }
+
+    .service img {
+        max-width: 60%;
+        height: 270px;
+    }
+
+    .service h2 {
+        margin-top: 40px;
+        font-size: 30px;
     }
 
     .service p {
-        width: 100%;
-        padding: 0;
-        margin: auto;
-    }
-
-    .content {
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 95%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    .promo {
-        width: 90%;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .promo button {
-        padding: 15px 60px;
-        font-size: 16px;
-    }
-
-    footer {
-        padding-left: 30px;
-        padding-right: 0px;
-    }
-
-    .footer-sec {
-        flex-direction: column;
-    }
-
-    li {
-        padding-right: 0px;
-    }
-
-    .sec-1 {
-        width: 90%;
+        font-size: 20px;
         margin-bottom: 40px;
-    }
-
-    .sec-2,
-    .sec-3,
-    .sec-4 {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    a {
-        margin-left: 0;
-    }
-
-    .sec-4 {
-        display: flex;
-        justify-content: center;
-        margin: 30px 0px 0px 0px;
-        margin-bottom: -20px;
-    }
-
-    .copy {
-        text-align: center;
     }
 }
 
-@media (max-width: 552px) {
+@media (min-width: 1440px) {
+    header {
+        background: url(./assets/bg-hero-desktop.svg);
+        background-color: hsl(193, 100%, 96%);
+        padding: 40px 60px;
+    }
+    
     nav img {
-    width: 110px;
-    height: 20px;
-   }
-
-   .build h1 {
-    font-size: 28px;
-    font-weight: 600;
-   }
-
-   .build p {
-    font-size: 17px;
-    line-height: 150%;
-   }
-
-   .btn {
-    padding: 7.5px 30px;
-    margin-bottom: 10px;
-   }
-   
-   .services {
-    padding-top: 0;
-    margin-top: 60px;
-   }
-
-    .footer-logo {
-        width: 150px;
+        height: 35px;
+    }
+    
+    .btn {
+        padding: 15px 70px;
+        font-size: 18px;
+        cursor: pointer;
     }
 
-    footer {
-        font-size: 16px;
-    }
-
-    nav button {
-        padding: 8px 20px;
-    }
-
-    .services img{
+    .build-sec {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        padding: 15px 60px;
+        align-items: center;
+        padding: 60px 0px 20px;
+    }
+    
+    .build {
+        width: 45%;
+    }
+    
+    .illus {
+        width: 55%;
     }
 
-    .services h2 {
-        font-size: 26px;
-        margin-bottom: 18px;
+    .build h1 {
+        text-align: start;
+        font-size: 42px;
+        padding-right: 40px;
+        margin: 25px 0;
     }
-
-    .services p {
-        font-size: 16px;
+    
+    .build p {
+        text-align: start;
+        padding-right: 40px;
+        margin: 25px 0px;
     }
+    
+    .build button {
+        display: flex;
+        padding: 15px 70px;
+    } 
 
-    h1 {
-        font-size: 22px;
+    .services {
+        padding: 120px 80px 40px;
+    }
+    
+    .service {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 10px 50px 65px;
+        box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    
+    .service img {
+        max-width: 100%;
+        width: 55%;
+        height: 440px;
+        padding: 15px 80px 15px 60px;
+    }  
+
+    .content h2 {
+        text-align: start;
+        margin: 10px 0px 20px;
+        font-size: 30px;
+        padding-right: 20px;
+    }
+    
+    .content p {
+        text-align: start;
+        width: 93%;
+        font-size: 20px;
+        padding-right: 20px;
+        line-height: 150%;
+    }    
+
+    .left {
+        padding: 0;
+    }
+    
+    .left p {
+        width: 100%;
     }
 
     .promo {
         max-width: 100%;
-        margin: auto;
-        padding: 45px 0px;
-        margin-bottom: -30%;
+        width: 55%;
+        padding: 60px 0px;
+        margin-bottom: -10%;
     }
-
+    
+    .promo h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
     .btn2 {
-        padding: 15px 30px;
-        font-size: 14px;
+        margin-top: 20px;
+        padding: 24px 110px;
+        cursor: pointer;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 240px 100px 30px;
+    }
+    
+    .footer-logo {
+        width: 250px;
+    }
+    
+    .footer-sec {
+        display: flex;
+        margin: 40px 0px;
+    }
+    
+    .sec-1 {
+        min-width: 40%;
+        width: 40%;
+    }
+    
+    .add {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .add p {
+        font-size: 18px;
+    }
+    
+    .add img {
+        margin-right: 20px;
+    }
+    
+    li {
+       margin-bottom: 20px; 
+       padding-right: 50px;
+       opacity: 0.9;
+    }
+    
+    .sec-2,
+    .sec-3,
+    .sec-4 {
+        width: 20%;
+        margin-left: 30px;
+    }
+    
+    .social {
+        display: flex;
+        padding: 0;
+        cursor: pointer;
+    }
+    
     a {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
+        padding: 5px;
     }
-
+    
+    
     .copy {
-        font-size: 14px;
+        text-align: right;
     }
 }
